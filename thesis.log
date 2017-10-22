@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.21)  22 OCT 2017 22:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.7.21)  23 OCT 2017 01:33
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1429,16 +1429,13 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \openout3 = `thesis.toc'.
 
  [10] (thesis.lof
-Underfull \vbox (badness 1226) has occurred while \output is active []
-
- [11
+[11
 
 ])
 \tf@lof=\write4
 \openout4 = `thesis.lof'.
 
-
-[12] (thesis.lot)
+ [12] (thesis.lot)
 \tf@lot=\write5
 \openout5 = `thesis.lot'.
 
@@ -1448,7 +1445,8 @@ Underfull \vbox (badness 1226) has occurred while \output is active []
 
 ])) [15] [16
 
-] (chapter/intro.tex
+]
+(chapter/intro.tex
 Chapter 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 6--9
@@ -1554,53 +1552,84 @@ File: figs/graphicaloutput.png Graphic file (type png)
 Package pdftex.def Info: figs/graphicaloutput.png used on input line 138.
 (pdftex.def)             Requested size: 234.73523pt x 234.74023pt.
  [6 <./figs/graphicaloutput.png (PNG copy)>]
-[7]
 
-LaTeX Warning: Reference `(' on page 8 undefined on input line 173.
-
-
-LaTeX Warning: Reference `fig:dists' on page 8 undefined on input line 199.
-
-
-LaTeX Warning: Reference `fig:dists' on page 8 undefined on input line 199.
-
-
-<figs/randomwalkdistribution_1000000_32.pdf, id=114, 462.52798pt x 346.89601pt>
-File: figs/randomwalkdistribution_1000000_32.pdf Graphic file (type pdf)
-<use figs/randomwalkdistribution_1000000_32.pdf>
-Package pdftex.def Info: figs/randomwalkdistribution_1000000_32.pdf used on inp
-ut line 203.
-(pdftex.def)             Requested size: 375.57779pt x 281.6988pt.
- [8 <./figs/randomwalkdistribution_1000000_32.pdf>]
-
-Package natbib Warning: Citation `bibid' on page 9 undefined on input line 225.
+Package natbib Warning: Citation `bibid' on page 7 undefined on input line 163.
 
 
 
-Package natbib Warning: Citation `Rayleigh1905' on page 9 undefined on input li
-ne 232.
+Underfull \hbox (badness 10000) in paragraph at lines 159--164
 
-LaTeX Font Info:    Try loading font information for U+dsrom on input line 238.
+ []
+
+[7] <figs/walkedge.pdf, id=114, 469.34346pt x 204.40868pt>
+File: figs/walkedge.pdf Graphic file (type pdf)
+
+<use figs/walkedge.pdf>
+Package pdftex.def Info: figs/walkedge.pdf used on input line 174.
+(pdftex.def)             Requested size: 328.62788pt x 143.13187pt.
+ <figs/grid2.pdf, id=115, 127.42406pt x 133.7517pt>
+File: figs/grid2.pdf Graphic file (type pdf)
+
+<use figs/grid2.pdf>
+Package pdftex.def Info: figs/grid2.pdf used on input line 185.
+(pdftex.def)             Requested size: 127.42374pt x 133.75134pt.
+ [8 <./figs/walkedge.pdf>]
+
+LaTeX Warning: Reference `fig:manhattan_distances' on page 9 undefined on input
+ line 244.
+
+<figs/rings.pdf, id=154, 135.48718pt x 136.93158pt>
+File: figs/rings.pdf Graphic file (type pdf)
+ <use figs/rings.pdf>
+Package pdftex.def Info: figs/rings.pdf used on input line 247.
+(pdftex.def)             Requested size: 135.48683pt x 136.93123pt.
+
+[9 <./figs/grid2.pdf>]
+
+LaTeX Warning: Reference `fig:manhattan_distances' on page 10 undefined on inpu
+t line 252.
+
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 252.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\doublestroke\udsrom.fd"
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
-<figs/calculatedvssimulated.pdf, id=174, 462.52798pt x 346.89601pt>
+Missing character: There is no p in font dsrom12!
+ [10 <./figs/rings.pdf>]
+
+LaTeX Warning: Reference `fig:dists' on page 11 undefined on input line 280.
+
+
+LaTeX Warning: Reference `fig:dists' on page 11 undefined on input line 280.
+
+<figs/calculatedvssimulated.pdf, id=205, 462.52798pt x 346.89601pt>
 File: figs/calculatedvssimulated.pdf Graphic file (type pdf)
 
 <use figs/calculatedvssimulated.pdf>
-Package pdftex.def Info: figs/calculatedvssimulated.pdf used on input line 250.
+Package pdftex.def Info: figs/calculatedvssimulated.pdf used on input line 283.
 
 (pdftex.def)             Requested size: 328.62788pt x 246.48314pt.
 
-<figs/exactPDF.pdf, id=175, 462.52798pt x 346.89601pt>
-File: figs/exactPDF.pdf Graphic file (type pdf)
- <use figs/exactPDF.pdf>
-Package pdftex.def Info: figs/exactPDF.pdf used on input line 260.
+<figs/exactPDFdemo.pdf, id=206, 462.52798pt x 346.89601pt>
+File: figs/exactPDFdemo.pdf Graphic file (type pdf)
+
+<use figs/exactPDFdemo.pdf>
+Package pdftex.def Info: figs/exactPDFdemo.pdf used on input line 292.
 (pdftex.def)             Requested size: 328.62788pt x 246.48314pt.
 
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 276--279
+<figs/randomwalkdistribution_1000000_32.pdf, id=207, 462.52798pt x 346.89601pt>
+File: figs/randomwalkdistribution_1000000_32.pdf Graphic file (type pdf)
+<use figs/randomwalkdistribution_1000000_32.pdf>
+Package pdftex.def Info: figs/randomwalkdistribution_1000000_32.pdf used on inp
+ut line 298.
+(pdftex.def)             Requested size: 375.57779pt x 281.6988pt.
+ [11 <./figs/calculatedvssimulated.pdf>] [12 <./figs/exactPDFdemo.pdf> <./figs/
+randomwalkdistribution_1000000_32.pdf
+
+pdfTeX warning: pdflatex.exe (file ./figs/randomwalkdistribution_1000000_32.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
+>]
+Underfull \hbox (badness 10000) in paragraph at lines 331--334
 
  []
 
@@ -1612,21 +1641,20 @@ Package epstopdf Info: Source file: <figs/schematic.eps>
 (epstopdf)                    size: 15057 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/schematic-eps-converte
 d-to.pdf figs/schematic.eps>
-(epstopdf)             \includegraphics on input line 282.
+(epstopdf)             \includegraphics on input line 337.
 Package epstopdf Info: Output file is already uptodate.
-<figs/schematic-eps-converted-to.pdf, id=182, 506.89375pt x 209.78375pt>
+<figs/schematic-eps-converted-to.pdf, id=367, 506.89375pt x 209.78375pt>
 File: figs/schematic-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/schematic-eps-converted-to.pdf>
 Package pdftex.def Info: figs/schematic-eps-converted-to.pdf used on input line
- 282.
+ 337.
 (pdftex.def)             Requested size: 375.57779pt x 155.4424pt.
-) (chapter/methods.tex [10 <./figs/calculatedvssimulated.pdf>] [11 <./figs/exac
-tPDF.pdf> <./figs/schematic-eps-converted-to.pdf>] [12
+) (chapter/methods.tex [13 <./figs/schematic-eps-converted-to.pdf>] [14
 
 ]
 Chapter 2.
-[13]) (chapter/results.tex [14]
+[15]) (chapter/results.tex [16]
 Chapter 3.
 Package epstopdf Info: Source file: <figs/unscaled.eps>
 (epstopdf)                    date: 2017-07-31 09:54:36
@@ -1638,7 +1666,7 @@ Package epstopdf Info: Source file: <figs/unscaled.eps>
 -to.pdf figs/unscaled.eps>
 (epstopdf)             \includegraphics on input line 7.
 Package epstopdf Info: Output file is already uptodate.
-<figs/unscaled-eps-converted-to.pdf, id=318, 462.72874pt x 346.29375pt>
+<figs/unscaled-eps-converted-to.pdf, id=410, 462.72874pt x 346.29375pt>
 File: figs/unscaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/unscaled-eps-converted-to.pdf>
@@ -1656,7 +1684,7 @@ o.pdf figs/scaled.eps>
 (epstopdf)             \includegraphics on input line 13.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/scaled-eps-converted-to.pdf, id=319, 462.72874pt x 346.29375pt>
+<figs/scaled-eps-converted-to.pdf, id=411, 462.72874pt x 346.29375pt>
 File: figs/scaled-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/scaled-eps-converted-to.pdf>
@@ -1668,7 +1696,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--20
 
  []
 
-<figs/30x30.png, id=320, 462.528pt x 346.896pt>
+<figs/30x30.png, id=412, 462.528pt x 346.896pt>
 File: figs/30x30.png Graphic file (type png)
  <use figs/30x30.png>
 Package pdftex.def Info: figs/30x30.png used on input line 23.
@@ -1684,7 +1712,7 @@ to.pdf figs/pvscorr.eps>
 (epstopdf)             \includegraphics on input line 30.
 Package epstopdf Info: Output file is already uptodate.
 
-<figs/pvscorr-eps-converted-to.pdf, id=322, 462.72874pt x 346.29375pt>
+<figs/pvscorr-eps-converted-to.pdf, id=414, 462.72874pt x 346.29375pt>
 File: figs/pvscorr-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/pvscorr-eps-converted-to.pdf>
@@ -1692,17 +1720,17 @@ Package pdftex.def Info: figs/pvscorr-eps-converted-to.pdf used on input line 3
 0.
 (pdftex.def)             Requested size: 323.90791pt x 242.40396pt.
 
-<figs/var1xbarvsfailure.pdf, id=323, 462.52798pt x 346.89601pt>
+<figs/var1xbarvsfailure.pdf, id=415, 462.52798pt x 346.89601pt>
 File: figs/var1xbarvsfailure.pdf Graphic file (type pdf)
 
 <use figs/var1xbarvsfailure.pdf>
 Package pdftex.def Info: figs/var1xbarvsfailure.pdf used on input line 40.
 (pdftex.def)             Requested size: 462.52684pt x 346.89516pt.
- [15
+ [17
 
-] [16 <./figs/unscaled-eps-converted-to.pdf> <./figs/scaled-eps-converted-to.pd
+] [18 <./figs/unscaled-eps-converted-to.pdf> <./figs/scaled-eps-converted-to.pd
 f> <./figs/30x30.png>]
-<figs/improvementl300000L40True_3398b43b399345d183a59bfda7727a61.pdf, id=416, 4
+<figs/improvementl300000L40True_3398b43b399345d183a59bfda7727a61.pdf, id=507, 4
 62.52798pt x 346.89601pt>
 File: figs/improvementl300000L40True_3398b43b399345d183a59bfda7727a61.pdf Graph
 ic file (type pdf)
@@ -1712,23 +1740,23 @@ Package pdftex.def Info: figs/improvementl300000L40True_3398b43b399345d183a59bf
 da7727a61.pdf used on input line 49.
 (pdftex.def)             Requested size: 462.52684pt x 346.89516pt.
 
-[17 <./figs/pvscorr-eps-converted-to.pdf>]
-<figs/gamma_corrections.png, id=464, 462.528pt x 346.896pt>
+[19 <./figs/pvscorr-eps-converted-to.pdf>]
+<figs/gamma_corrections.png, id=555, 462.528pt x 346.896pt>
 File: figs/gamma_corrections.png Graphic file (type png)
 
 <use figs/gamma_corrections.png>
 Package pdftex.def Info: figs/gamma_corrections.png used on input line 74.
 (pdftex.def)             Requested size: 234.73523pt x 176.05182pt.
- [18 <./figs/var1xbarvsfailure.pdf>] [19 <./figs/improvementl300000L40True_3398
+ [20 <./figs/var1xbarvsfailure.pdf>] [21 <./figs/improvementl300000L40True_3398
 b43b399345d183a59bfda7727a61.pdf> <./figs/gamma_corrections.png>] <figs/A4N32l4
-0000.pdf, id=585, 462.52798pt x 346.89601pt>
+0000.pdf, id=677, 462.52798pt x 346.89601pt>
 File: figs/A4N32l40000.pdf Graphic file (type pdf)
 
 <use figs/A4N32l40000.pdf>
 Package pdftex.def Info: figs/A4N32l40000.pdf used on input line 91.
 (pdftex.def)             Requested size: 328.62788pt x 246.48314pt.
 
-<figs/variancevslocation_combined.pdf, id=586, 462.52798pt x 346.89601pt>
+<figs/variancevslocation_combined.pdf, id=678, 462.52798pt x 346.89601pt>
 File: figs/variancevslocation_combined.pdf Graphic file (type pdf)
 
 <use figs/variancevslocation_combined.pdf>
@@ -1736,23 +1764,23 @@ Package pdftex.def Info: figs/variancevslocation_combined.pdf used on input lin
 e 100.
 (pdftex.def)             Requested size: 328.62788pt x 246.48314pt.
 
-<figs/comparison_of_methods.pdf, id=587, 462.52798pt x 346.89601pt>
+<figs/comparison_of_methods.pdf, id=679, 462.52798pt x 346.89601pt>
 File: figs/comparison_of_methods.pdf Graphic file (type pdf)
 
 <use figs/comparison_of_methods.pdf>
 Package pdftex.def Info: figs/comparison_of_methods.pdf used on input line 113.
 
 (pdftex.def)             Requested size: 328.62788pt x 246.48314pt.
- [20 <./figs/A4N32l40000.pdf>] [21 <./figs/variancevslocation_combined.pdf> <./
+ [22 <./figs/A4N32l40000.pdf>] [23 <./figs/variancevslocation_combined.pdf> <./
 figs/comparison_of_methods.pdf
 
 pdfTeX warning: pdflatex.exe (file ./figs/comparison_of_methods.pdf): PDF inclu
 sion: multiple pdfs with page group included in a single page
->]) (chapter/conclusion.tex [22]
+>]) (chapter/conclusion.tex [24]
 Chapter 4.
-) (thesis.bbl [23
+) (thesis.bbl [25
 
-] [24
+] [26
 
 ]
 Missing character: There is no Ð in font cmr12!
@@ -1773,15 +1801,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 51--55
 OT1/cmr/m/n/12 (2014).  URL $\OT1/cmtt/m/n/12 https : / / github . com /
  []
 
-) (back/an_appendix.tex [25] [26
+) (back/an_appendix.tex [27] [28
 
 ]
 Appendix A.
 
 Underfull \vbox (badness 3769) has occurred while \output is active []
 
- [27]
-[28]
+ [29]
+[30]
 Package epstopdf Info: Source file: <figs/errors.eps>
 (epstopdf)                    date: 2017-07-31 15:22:58
 (epstopdf)                    size: 3443 bytes
@@ -1790,48 +1818,52 @@ Package epstopdf Info: Source file: <figs/errors.eps>
 (epstopdf)                    size: 2718 bytes
 (epstopdf)             Command: <epstopdf --outfile=figs/errors-eps-converted-t
 o.pdf figs/errors.eps>
-(epstopdf)             \includegraphics on input line 90.
+(epstopdf)             \includegraphics on input line 95.
 Package epstopdf Info: Output file is already uptodate.
- <figs/errors-eps-converted-to.pdf, id=779, 162.6075pt x 130.4875pt>
+ <figs/errors-eps-converted-to.pdf, id=870, 162.6075pt x 130.4875pt>
 File: figs/errors-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figs/errors-eps-converted-to.pdf>
-Package pdftex.def Info: figs/errors-eps-converted-to.pdf used on input line 90
+Package pdftex.def Info: figs/errors-eps-converted-to.pdf used on input line 95
 .
 (pdftex.def)             Requested size: 187.78531pt x 150.70256pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--102
+Underfull \hbox (badness 10000) in paragraph at lines 104--107
 
  []
 
 
-Overfull \hbox (34.07143pt too wide) in paragraph at lines 99--102
+Overfull \hbox (34.07143pt too wide) in paragraph at lines 104--107
 \OT1/cmr/m/n/12 Full code can be found at $\OT1/cmtt/m/n/12 https : / / github 
 . com / gorff / Toric-[]Code-[]Correlated-[]Error-[]Decoder$\OT1/cmr/m/n/12 . 
  []
 
+
+Underfull \vbox (badness 2913) has occurred while \output is active []
+
+ [31 <./figs/errors-eps-converted-to.pdf>]
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) [29 <./figs/errors-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 109.
+)
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 114.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 109.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 114.
 
-Overfull \hbox (59.27863pt too wide) in paragraph at lines 109--110
+Overfull \hbox (59.27863pt too wide) in paragraph at lines 114--115
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (66.32861pt too wide) in paragraph at lines 110--111
+Overfull \hbox (66.32861pt too wide) in paragraph at lines 115--116
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) [30] (thesis.bbl
+) [32] (thesis.bbl
 Missing character: There is no Ð in font cmr12!
 Missing character: There is no š in font cmr12!
 Missing character: There is no Ð in font cmr12!
@@ -1857,7 +1889,7 @@ Package natbib Warning: There were undefined citations.
 
 Package natbib Warning: There were multiply defined citations.
 
-[31
+[33
 
 
 ] (thesis.aux)
@@ -1866,13 +1898,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 14350 strings out of 493323
- 253745 string characters out of 3139066
- 326595 words of memory out of 3000000
- 17668 multiletter control sequences out of 15000+200000
+ 14370 strings out of 493323
+ 254155 string characters out of 3139066
+ 325360 words of memory out of 3000000
+ 17685 multiletter control sequences out of 15000+200000
  548745 words of font info for 80 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,45p,10404b,1725s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,12n,45p,10404b,1307s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc}<C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Program Files/MiKTeX 2.
 9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/
@@ -1894,9 +1926,9 @@ am Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files
 2.9/fonts/type1/public/doublestroke/dsrom12.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/public/doublestroke/dsrom8.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/urw/times/utmb8a.pfb>
-Output written on thesis.pdf (47 pages, 820299 bytes).
+Output written on thesis.pdf (49 pages, 894043 bytes).
 PDF statistics:
- 862 PDF objects out of 1000 (max. 8388607)
+ 954 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 96 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 111 words of extra memory for PDF output out of 10000 (max. 10000000)
 

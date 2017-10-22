@@ -156,30 +156,74 @@ Decoding the syndrome of the Toric Code consists of matching anyons (measurable 
 
 	The $E$ and $E^\prime$ are dependant upon L being even or odd. For this reason, we will find unique $v_0$ and $p_{c0}$ for the even and odd cases.
 \section{Random Walks}
-	\subsection{Random walks}
-	Random walks can take several forms. 
-	\begin{itemize}
-		\item self avoiding random walk
-		\item non-self avoiding 
-		\item other variation $\cdots$ self flipping? non inverting or whatever.. have written in logbook...
-	\end{itemize}
- 	non-self avoiding random walks are the kind of error that this thesis investigates. 
- 	This kind of random walk on a 2D grid has 4 possible moves at every timestep, and can move a distance of 1. 
+	Random walks can take several forms such as self avoiding walks and biased walks. The walk model that is used in this project is non selfavoiding walks on a 2D lattice. This kind of random walk on a 2D grid has 4 possible moves at every step, and can move a distance of 1. 
  	These random walks can be characterized by their expected walk length. The expected walk length can take several forms.
- 	By far the easiest to calculate walk length is the root-mean-square (RMS) walk length. This walk length is simply proportional to RMS of the number of steps. 
- 	\begin{equation}
- 	RMS(N) = \sqrt{N}s
- 	 \end{equation}
- 	The second type of distance, is the average Pythagorean distance. This distance is more complicated to calculate, and is found through the equation \ref({eq:pythag}
+ 	By far the easiest to calculate walk length is the root-mean-square (RMS) walk length. This walk length is simply proportional to RMS of the number of steps. 	
+	\\\\
+ 	The distribution of random walks was shown by Lord Rayleigh \cite{bibid} to be approximated by the Rayleigh equation for diffusion for large step sizes. Computationally, large step sizes are very hard to compute for large samples of random walks. Here we develop exact solutions for random walks, to determine the expected walk length of a random walk after $N$ steps. We determine the expected walk length in terms of the Manhattan distance, and the Pythagorean distance, as both are of importance to the match scheme for correlated errors on the Toric code. We shall then confirm the results of these equations to the PDFs of simulated random walks, and the Rayleigh equation for diffusion. 
  	
- 	Expected Pythagorean distance:
+ 	Firstly, the Rayleigh equation for diffusion:
  	\begin{equation}
- 	D(N) = \frac{1}{4^N}\sum_{i=0}^{N}\sum_{j=0}^{N}\prescript{N}{}{C}_{i}\prescript{N}{}{C}_{j} \frac{1}{\sqrt{2}}\sqrt{(2i-N)^2+(2j-N)^2)} 
+ 	P_N(R) \sim \frac{2R}{N}e ^{-R^2/N}
+ 	\label{eq:rayleigh}
+ 	\end{equation}
+	For N steps, the total possible walks is $4^N$.
+	
+		\begin{figure}[htpb]
+		\centering
+		\includegraphics[width = 0.7\textwidth]{figs/walkedge.pdf}
+		\caption{The number of possible paths to reach the edge of a positive-only bias random walk for N = 3.}
+		\label{fig:randomwalkedge}
+		\end{figure}
+		
+	Consider a walker starting at the origin, and making N random steps. For all points in the space, there are a certain number of walks that can end there. The leading edge of the possible walks the walker can make grows proportionally to Pascal's triangle as seen in figure \ref{fig:randomwalkedge}. Pascal's triangle sets the outer edge of the possible moves for a random walk in 2D, in all 4 diagonal directions. To find the number of walks that can end at locations inside this extrema, we can use combinations. Each step adds 4 times the previous number of walks to space, and alternates the possible end points of those walk, between the even and odd locations on the grid (i.e. a walk with N=3 cannot end at the origin, while a walk with N=2 may).  
+		
+
+
+	\begin{figure}
+	\centering
+	\includegraphics{figs/grid2.pdf}
+	\caption{A rotation of the space, taking a diamond edged walk space to a square one, with diagonal moves. Blue dots represent the points that even walks may reach, and blue indicated locations that odd length walks may reach.}
+	\label{fig:cogrid}
+	\end{figure}
+	Consider a rotation of the space, with the indexing indicated in figure \ref{fig:cogrid}. The number of walks that may reach the edges of this grid are again represented by Pascal's triangle. Consider the red grid; the edges of this grid are ${}^NC_i$ for the horizontal edges, and ${}^NC_j$ for the vertical. The number of walks that end at internal red dots (and extremea) are represented by a concatenation of these formulas. That is to say that with the indexing of i and j, the number of walks that can reach the red points is equal to;
+	\begin{align}
+		n_{walks}(i,j) &= {}^NC_i {}^NC_j \\ 
+		\label{eq:possiblewalks}
+	\end{align}
+	Which in this case yields;
+\[
+	\begin{bmatrix}
+	{}^3C_0 {}^3C_0   &	{}^3C_0 {}^3C_1   &	{}^3C_0 {}^3C_2   &	{}^3C_0 {}^3C_3   \\
+	{}^3C_1 {}^3C_0   &	{}^3C_1 {}^3C_1   &	{}^3C_1 {}^3C_2   &	{}^3C_1 {}^3C_3   \\
+	{}^3C_2 {}^3C_0   &	{}^3C_2 {}^3C_1   &	{}^3C_2 {}^3C_2   &	{}^3C_2 {}^3C_3   \\	
+	{}^3C_3 {}^3C_0   &	{}^3C_3 {}^3C_1   &	{}^3C_3 {}^3C_2   &	{}^3C_3 {}^3C_3   \\
+	\end{bmatrix} 
+ = 
+	\begin{bmatrix}
+	1 & 3 & 3 & 1 \\ 
+	3 & 9 & 9 & 3 \\ 
+	3 & 9 & 9 & 3 \\ 
+	1 & 3 & 3 & 1 \\ 
+	\end{bmatrix} 
+\]	
+	
+ 	\subsection{Expected walk lengths}
+ 	A useful metric to know is what the expected walk length/displacement of a walker will be, after N steps. The expected walk length can be expressed in 2 ways, and scales with $\sqrt{N}$ as N grown large. The first way we will express `expected distance' is with the root-mean-square distance (RMS). 
+ 	\begin{equation}
+ 	RMS(N) = \sqrt{N}
+ 	 \end{equation}
+ 	The second type of distance, is the expected Pythagorean distance (E[D(N)]). This is the average radial displacement of the walker after N steps. This distance is more complicated to calculate, and is found through the equation \ref{eq:pythag_expected}.
+ 	
+ 	\begin{equation}
+ 	E[D(N)] = \frac{1}{4^N}\sum_{i=0}^{N}\sum_{j=0}^{N}\prescript{N}{}{C}_{i}\prescript{N}{}{C}_{j} \frac{1}{\sqrt{2}}\sqrt{(2i-N)^2+(2j-N)^2)} 
+ 	\label{eq:pythag_expected}
  	\end{equation}
  	
- 	Expected Manhattan distance:
- 	\begin{equation*}
- 	D(N) = \frac{1}{4^N}\sum_{i=0}^{N}\sum_{j=0}^{N}\prescript{N}{}{C}_{i}\prescript{N}{}{C}_{j} \frac{1}{\sqrt{2}} 
+ 	Equation \ref{eq:pythag_expected} is formed from summing the distances of all possible endpoints on the space, weighted by the number of possible walks that end at that location, and then divided by the total number of possible walks. This distance is then converted back from the rotated space. 
+ 	Similarly we can form an equation to determine the expected Manhattan distance (E[M(N)]) of a random walk. 
+ 	\begin{equation}
+ 	E[M(N)] = \frac{1}{4^N}\sum_{i=0}^{N}\sum_{j=0}^{N}\prescript{N}{}{C}_{i}\prescript{N}{}{C}_{j} \frac{1}{\sqrt{2}} 
  	\begin{bmatrix}
  	1&1\\
  	\end{bmatrix} 
@@ -193,16 +237,67 @@ Decoding the syndrome of the Toric Code consists of matching anyons (measurable 
  	2j-N
  	\end{bmatrix}
  	\right|
- 	\end{equation*}
+ 	\label{eq:manahat_expected}
+ 	\end{equation}
+ 	Equation \ref{eq:manahat_expected} is formed again by weighting distances according to the number of walk present, and by dividing by the total number of walks. A difference between equations \ref{eq:pythag_expected} and \ref{eq:manahat_expected} is that to calculate the Manhattan distance, the space needs to be rotated first, to allow for distances to be added according to the Manhattan convention. The distance is then scaled again, back from the rotated space (i,j space) to the original walk space (x,y). 
+ 	\subsection{Exact Manhattan PDF}
+	Random walks move in discrete steps. For the pythagorean distance D(N), the number of possible distances grows rapidly, as the increasing (i,j) position allow for more possible combinations of $\sqrt{i^2+j^2}$. The Manhattan distance however, follows a very useful and linear increase in the possible distances with step size. As the step size is increased, the total number of walk lengths is only increased by 1. This is shown in figure \ref{fig:manhattan_distances} for even step sizes. 
+	\begin{figure}
+	\centering
+	\includegraphics{figs/rings.pdf}
+	\caption{The manhattan distance of each point on the space is shown. These equidistant points form a square in the (i,j) space.}
+	\label{fig:manhattan_distance}
+	\end{figure}
+	
+ 	These `equidistant-square-rings' in figure \ref{fig:manhattan_distances} allow us to exactly calculate the probability of reaching a certain Manhattan length. The following solution is an exact formula for the PDF of a random walk shown to be true at least for $N\in \mathds{Z}^{even}$, in Manhattan space. 
  	
+
+ 	We already know from \ref{eq:possiblewalks} how to determine the number of walks ending at a location. And we also know that in Manhattan space, distance from the origin has contour lines in squares, corresponding to keeping i or j constant.  The problem of determining the PDF for a certain length, is the same as now selecting a subset of those walks (a central ring), and dividing by the total number of walks. 
+ 	To do so, we create two sets to define the range that we wish to find the probability of (the probability of having a walk between two distances). 
+ 	The first set, which we will call $\mathds{S}$ defines the outer ring, and the second set $\mathds{p}$ defines the inner ring. In our case, we are only interested in the case where the distance selected is for a single discrete distance.
+ 	\begin{align}
+ 	 	\centering
+ 	 		\mathds{S} &= \{ \frac{N-L}{2} \leq n \leq \frac{N+L}{2};  \hspace{1cm} n\in \mathds{Z}^{even} \}\\
+ 	 		\mathds{P} &= \{\frac{N-L}{2}+1 \leq n \leq \frac{N+L}{2}-1;  \hspace{1cm} n\in \mathds{Z}^{even}\}
+ 	 	\end{align}
+	Now we can sum over the larger set $\mathds{S}$, subtract the set $\mathds{P}$, and then normalizer over the whole grid.
+ 	\begin{align}
+ 	P_N(L) & = \frac{\sum_{i\in \mathds{S}}\sum_{j\in \mathds{S}} {}^NC_i {}^NC_j - \sum_{i\in \mathds{P}}\sum_{j\in \mathds{P}} {}^NC_i {}^NC_j}
+ 	{\sum_{i = 0}^N\sum_{j=0}^N {}^NC_i {}^NC_j }\\
+ 	\label{eq:exactPDF}
+ 	\end{align}
+	Where we define the sum of a null set to be zero. 
+ 	
+ 	Unfortunately no similar formula for the Pythagorean distance was developed. To create PDFs for the Pythagorean distance, gamma functions will be fit.
+
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	\subsection{Confirmation of equations}
 	These formulas line up well with plots made from the distributions of simulated walks. 
 	Figure \ref{fig:dists} shows how these mean values compare to the shape of the distributions. Figure \ref{fig:dists} shows gamma functions fitted to data of the manhattan distance and the pythagorean distances of the end points of 10,000 random walks. 
-	
+	\begin{figure}
+	 	\centering
+	 	\includegraphics[width = 0.7\textwidth]{figs/calculatedvssimulated.pdf}
+	 	\caption{A comparison of the calculated values vs simulated walk data for 1,000,000 random walks. RMS error between the two trends was 7e-06. }
+	 	\label{fig:exactproof}
+	 	\end{figure}
+	 	Figure \ref{fig:exactproof} shows excellent agreement of formula \ref{eq:exactPDF} to walk data. 
+	 	
+	 	
+	 	\begin{figure}
+	 	\centering
+	 	\includegraphics[width = 0.7\textwidth]{figs/exactPDFdemo.pdf}
+	 	\caption{This figure shows the exact PDF calculated for walks of various lengths. This data is generated from equation \ref{eq:exactPDF}.}
+	 	\end{figure}
+	 	
 	\begin{figure}
 		\centering
 		\includegraphics[width = 0.8\textwidth]{figs/randomwalkdistribution_1000000_32}
 		\label{fig:randomwalkdistributions}
-		\caption{This figure is a PDF of the distance of generated random walks, with the distance calulated in different ways}
+		\caption{This figure is a PDF of the distance of generated random walks, with the distance calculated in different ways}
 	\end{figure}
 	important walklengths in figure \ref{fig:randomwalkdistributions} are the three calculated mean distances, and the locations of the turning points for the gamma distributions. 
 	\begin{table}
@@ -221,46 +316,6 @@ Decoding the syndrome of the Toric Code consists of matching anyons (measurable 
 
  	The probability density function (PDF) in figure \ref{fig:randomwalkdistributions} were generate using Markov Chain Monte Carlo (MCMC) methods. These PDFs were then used to create a more accurate correction function for the Toric Code, as when we know that the distribution looks like figure \ref{fig:randomwalkdistributions} rather than an exponential decay (as in the non-correlated model), we can conclude that correcting proportionally to this distribution, rather than as simply a linear scale with distance; we should see an improved success rate of the code. 
  
- \subsection{Random walks again}
-The distribution of random walks was shown by Lord Rayleigh \cite{bibid} to be approximated by the Rayleigh equation for diffusion for large step sizes. Computationally, large step sizes are very hard to compute for large samples of random walks. Here we develop exact solutions for random walks, to determine the expected walk length of a random walk after $N$ steps. We determine the expected walk length in terms of the Manhattan distance, and the Pythagorean distance, as both are of importance to the match scheme for correlated errors on the Toric code. We shall then confirm the results of these equations to the PDFs of simulated random walks, and the Rayleigh equation for diffusion. 
-
-Firstly, the Rayleigh equation for diffusion:
-\begin{equation}
-P_N(R) \sim \frac{2R}{N}e ^{-R^2/N}
-\label{eq:rayleigh}
-\end{equation}
-In 1906 Rayleigh proposed a method to calculate the PDF of a random walk for large N \cite{Rayleigh1905}. Here we show an exact method for determining the expected walk length; which is useful for our purposes of creating a correction function based upon a gaussian centred at that distance.  
-
-\begin{align}
-P_N(L) & = \frac{\sum_{i\in \mathds{S}}\sum_{j\in \mathds{S}} {}^NC_i {}^NC_j - \sum_{i\in \mathds{P}}\sum_{j\in \mathds{P}} {}^NC_i {}^NC_j}
-{\sum_{i = 0}^N\sum_{j=0}^N {}^NC_i {}^NC_j }\\
-\label{eq:exactPDF}
-\end{align}
-Where 
-\begin{align}
-\centering
-	\mathds{S} &= \{ \frac{N-L}{2} \leq n \leq \frac{N+L}{2};  \hspace{1cm} n\in \mathds{Z}^{even} \}\\
-	\mathds{P} &= \{\frac{N-L}{2}+1 \leq n \leq \frac{N+L}{2}-1;  \hspace{1cm} n\in \mathds{Z}^{even}\}
-\end{align}
-Where we define the sum of a null set to be zero. 
-
-
-\begin{figure}
-\centering
-\includegraphics[width = 0.7\textwidth]{figs/calculatedvssimulated.pdf}
-\caption{A comparison of the calulated values vs simulated walk data for 1,000,000 random walks. RMS error between the two trends was 7e-06. }
-\label{fig:exactproof}
-\end{figure}
-Figure \ref{fig:exactproof} shows excellent agreement of formula \ref{eq:exactPDF} to walk data. 
-
-
-
-\begin{figure}
-\centering
-\includegraphics[width = 0.7\textwidth]{figs/exactPDF.pdf}
-\caption{This figure shows the exact PDF calculated for walks of various lengths. This data is generated from equation \ref{eq:exactPDF}.}
-\end{figure}
-
 
 
 
