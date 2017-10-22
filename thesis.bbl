@@ -1,0 +1,56 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Manin1980}
+Y.~I. Manin.
+\newblock \emph{{Vychislimoe i nevychislimoe [Computable and Noncomputable]}}.
+\newblock Sov.Radio pp. 13--15 (1980).
+
+\bibitem{Deutsch1985}
+S.~Deutsch.
+\newblock \emph{{Quantum Theory, the Church-Turing Principal and the universal
+  quantum computer}}.
+\newblock Royl Society of London \textbf{400}(A), 97 (1985).
+
+\bibitem{Shor1994}
+P.~W. Shor and P.~W. Shor.
+\newblock \emph{{Polynomial-Time Algorithms for Prime Factorization and
+  Discrete Logarithms on a Quantum Computer *}}.
+\newblock AT{\&}T Research pp. 20--22 (1994).
+\newblock \eprint{9508027v2}.
+
+\bibitem{1997}
+.~. Китаев and A.~Y. Kitaev.
+\newblock \emph{{Quantum computations: algorithms and error correction}}.
+\newblock Uspekhi Matematicheskikh Nauk \textbf{52}(6), 53 (1997).
+
+\bibitem{Dennis2001}
+E.~Dennis, A.~Kitaev, A.~Landahl, and J.~Preskill.
+\newblock \emph{{Topological quantum memory *}}  (2001).
+\newblock \eprint{0110143v1},
+  \urlprefix\url{https://arxiv.org/pdf/quant-ph/0110143.pdf}.
+
+\bibitem{Stace2010}
+T.~M. Stace and S.~D. Barrett.
+\newblock \emph{{Error correction and degeneracy in surface codes suffering
+  loss}}.
+\newblock Physical Review A - Atomic, Molecular, and Optical Physics
+  \textbf{81}(2), 1 (2010).
+\newblock \eprint{0912.1159}.
+
+\bibitem{Kolmogorov2009}
+V.~Kolmogorov.
+\newblock \emph{{Blossom V: A new implementation of a minimum cost perfect
+  matching algorithm}}.
+\newblock Mathematical Programming Computation \textbf{1}(1), 43 (2009).
+
+\bibitem{Nickerson2014}
+N.~Nickerson.
+\newblock \emph{{precalculatedDecoded}} (2014).
+\newblock
+  \urlprefix\url{https://github.com/naominickerson/precalculatedDecoder}.
+
+\end{thebibliography}

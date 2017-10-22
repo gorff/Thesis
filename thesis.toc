@@ -1,0 +1,38 @@
+\contentsline {chapter}{Abstract}{v}
+\contentsline {chapter}{Acknowledgements}{vii}
+\contentsline {chapter}{List of Figures}{xi}
+\contentsline {chapter}{List of Tables}{xiii}
+\contentsline {chapter}{List of Symbols}{xv}
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\contentsline {section}{\numberline {1.1}Quantum Computing}{1}
+\contentsline {section}{\numberline {1.2}Error Correction}{3}
+\contentsline {subsection}{\numberline {1.2.1}Toric Code}{3}
+\contentsline {section}{\numberline {1.3}Random-Bond Ising model}{6}
+\contentsline {section}{\numberline {1.4}Scaling}{7}
+\contentsline {section}{\numberline {1.5}Random Walks}{7}
+\contentsline {subsection}{\numberline {1.5.1}Random walks}{7}
+\contentsline {subsection}{\numberline {1.5.2}Random walks again}{9}
+\contentsline {section}{\numberline {1.6}Correlated Errors}{10}
+\contentsline {subsection}{\numberline {1.6.1}Correlated errors}{10}
+\contentsline {chapter}{\numberline {2}Methods}{13}
+\contentsline {section}{\numberline {2.1}Toric Code and Syndrome Measurements}{13}
+\contentsline {subsection}{\numberline {2.1.1}Qubit layout and operators}{13}
+\contentsline {section}{\numberline {2.2}Uncorrelated Errors}{14}
+\contentsline {section}{\numberline {2.3}Correlated Errors}{14}
+\contentsline {chapter}{\numberline {3}Results}{15}
+\contentsline {section}{\numberline {3.1}Correlated Errors}{15}
+\contentsline {section}{\numberline {3.2}Improved decoder}{15}
+\contentsline {section}{\numberline {3.3}Correction schemes}{17}
+\contentsline {section}{\numberline {3.4}Performance of Gaussian Correction}{20}
+\contentsline {section}{\numberline {3.5}Comparison of expected walk length methods}{20}
+\contentsline {chapter}{\numberline {4}Conclusion}{23}
+\contentsline {section}{\numberline {4.1}Future work}{23}
+\contentsline {chapter}{References}{25}
+\contentsline {chapter}{\numberline {A}Appendix}{27}
+\contentsline {section}{\numberline {A.1}Gamma functions}{27}
+\contentsline {section}{\numberline {A.2}Maths}{28}
+\contentsline {subsection}{\numberline {A.2.1}Definitions}{28}
+\contentsline {subsection}{\numberline {A.2.2}Hadamard Gate}{28}
+\contentsline {subsection}{\numberline {A.2.3}Homology Classes}{29}
+\contentsline {section}{\numberline {A.3}Code}{29}
+\contentsline {chapter}{References}{31}

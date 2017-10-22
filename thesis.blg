@@ -1,0 +1,9 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+The style file: uqthesis.bst
+Illegal, another \bibdata command---line 116 of file thesis.aux
+ : \bibdata
+ :         {thesis}
+I'm skipping whatever remains of this command
+Database file #1: bib.bib
+Warning--empty journal in Dennis2001
+(There was 1 error message)

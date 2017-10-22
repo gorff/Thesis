@@ -1,0 +1,27 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces A graphical view of the toric code. Qubits exist on/as edges of the lattice. A star operator is shown in red, and a plaquette operator is shown in blue.}}{5}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces A torus has 2 possible non-contractible loops highlighted in red and blue. These loops can be formed from either X or Z Pauli operators.}}{5}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces }}{5}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces A 5 by 5 torus. Blue dots indicate aligned regions ($\tau = +1$), red dots indicate unaligned ($\tau = -1$). The red lines show the one dimensional chains of antiferromagnetic bonds ($E$), which terminate in Ising vorticies (green dots). These Ising vorticies are then least weight matched ($E'$, in yellow).}}{6}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces This figure is a PDF of the distance of generated random walks, with the distance calulated in different ways}}{8}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces A comparison of the calulated values vs simulated walk data for 1,000,000 random walks. RMS error between the two trends was 7e-06. }}{10}
+\contentsline {figure}{\numberline {1.7}{\ignorespaces This figure shows the exact PDF calculated for walks of various lengths. This data is generated from equation 1.11\hbox {}.}}{11}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces The logical qubits are encoded into the Toric code as $2$ logical qubits onto $2L^2$ physical qubits. These qubits then pass through an error channel. The syndrome is then measured, and an appropriate correction procedure takes place. The code is then decoded, and checked for success. }}{11}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces This plot shows $P_{fail}$ Vs $p$ without any scaling applied, for 3 code sizes. A hyperbolic tangent trendline was fitted to allow the crossover point to be determined. Error bars have been plotted.}}{16}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces A plot of the rescaled data $x$ vs $P_{fail}$. $v_c = 1.49$, $p_c = 0.103$}}{16}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces A L=30 code with 5000 samples, showing both the effect of the number of error chains, and the length of those error chains on the success rate of the code.}}{16}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces A 60x60 grid, with a constant number of error sites (11.1$\%$ of sites had error). This means that as the correlation length of the chains was increased, the number of chains was decreased, to keep the total number of affected sites constant. It can be seen that as the correlation length of the anyon gets longer, their failure rate increases; even with the total number of affected sites remaining constant. }}{17}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces this plot shows how the code implemented allows the code to match the failure rate of the origional code, even though it isnt least weight. this means that my code should work, with better parameters.}}{18}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces This plot shows how the variance has a very interesting curve, for what variances can be optimal. This likely has effects/interactions from the other walks in locality. An optimal variance was found at $\sigma ^2$ = 10.75. Variance was stepped in sizes of 0.5.}}{19}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces this is how the distances were reduces accoring to the distributions}}{19}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces This figure shows the performance of the gaussian correction for $\sigma ^2$ and $\overline {w}$ when 4 anyons are present with N=32 on a L=40 code.}}{20}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces A large range scan of N=32 A=15 for $\sigma ^2$ and $\overline {w}$}}{21}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces This trend clearly shows that the gaussian benefits from being centered at the expected walk length calculated from the pythagorean method of walk lengths. }}{21}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {A.1}{\ignorespaces This figure shows the 4 nontrivial cycles on the torus. There are conjugate directions for each chain of X and Z operators. Two of the cycles exist on the grid, and 2 exist on the co-grid.}}{29}

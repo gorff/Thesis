@@ -1,0 +1,43 @@
+% Defined in the document class file (uqthesis.cls) are a number of options for the content of the formatted document.  These features are defined using the command (\DeclareOption).  We may control the expression of these options by adding the appropriate identifier to the list passed when calling the document class. This list is contained within square brackets. The following options exist:
+%	honours				To change from default PHD structure.
+%	printsupervisor			Print supervisors name on the title page.
+%	printdepartment		Department name printed on title page.
+%	printschool			School name printed on title page.
+%	copyrightpage			Print copyright statement on back of title page.
+%	examinerscopy			Print "Examiners Copy" bottom title page.
+%	titlesmallcaps			Change the written font of the document title.
+\documentclass [honours, printsupervisor, printschool, copyrightpage, titlesmallcaps] {uqthesis}
+
+%%%%% Some helpful general definitions
+\input{defs_thesis}
+
+\begin{document}
+
+\frontmatter
+
+%%%%% Acknowledgements, titlepage, abstract, list of publications
+\input{front/title}
+
+\mainmatter
+
+%%%%% Introduction
+\input{chapter/intro}
+
+%%%%% Other chapters in here
+\input{chapter/methods}
+\input{chapter/results}
+
+%%%%% Conclusion
+\input{chapter/conclusion}
+\bibliography{bib}
+\appendix
+
+%%%%% Projectors
+\input{back/an_appendix}
+ 
+\backmatter
+
+%%%%% Bibliography, in BibTeX format (the .bib file)
+\bibliography{thesis}
+
+\end{document}
