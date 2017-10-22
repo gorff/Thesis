@@ -9,7 +9,7 @@
 \contentsline {figure}{\numberline {1.5}{\ignorespaces The number of possible paths to reach the edge of a positive-only bias random walk for N = 3.}}{8}
 \contentsline {figure}{\numberline {1.6}{\ignorespaces A rotation of the space, taking a diamond edged walk space to a square one, with diagonal moves. Blue dots represent the points that even walks may reach, and blue indicated locations that odd length walks may reach.}}{9}
 \contentsline {figure}{\numberline {1.7}{\ignorespaces The manhattan distance of each point on the space is shown. These equidistant points form a square in the (i,j) space.}}{10}
-\contentsline {figure}{\numberline {1.8}{\ignorespaces A comparison of the calculated values vs simulated walk data for 1,000,000 random walks. RMS error between the two trends was 7e-06. }}{11}
+\contentsline {figure}{\numberline {1.8}{\ignorespaces A comparison of the calculated values vs simulated walk data for 1,000,000 random walks. Error bars are shown. RMS error between the two trends was 7e-06. }}{11}
 \contentsline {figure}{\numberline {1.9}{\ignorespaces This figure shows the exact PDF calculated for walks of various lengths. This data is generated from equation 1.16\hbox {}.}}{12}
 \contentsline {figure}{\numberline {1.10}{\ignorespaces This figure is a PDF of the distance of generated random walks, with the distance calculated in different ways}}{12}
 \contentsline {figure}{\numberline {1.11}{\ignorespaces The logical qubits are encoded into the Toric code as $2$ logical qubits onto $2L^2$ physical qubits. These qubits then pass through an error channel. The syndrome is then measured, and an appropriate correction procedure takes place. The code is then decoded, and checked for success. }}{13}
