@@ -20,21 +20,24 @@
 \contentsline {subsection}{\numberline {2.1.1}Qubit layout and operators}{15}
 \contentsline {section}{\numberline {2.2}Uncorrelated Errors}{16}
 \contentsline {section}{\numberline {2.3}Correlated Errors}{16}
-\contentsline {chapter}{\numberline {3}Results}{17}
-\contentsline {section}{\numberline {3.1}Correlated Errors}{17}
-\contentsline {section}{\numberline {3.2}Improved decoder}{17}
-\contentsline {section}{\numberline {3.3}Correction schemes}{19}
-\contentsline {section}{\numberline {3.4}Performance of Gaussian Correction}{22}
-\contentsline {section}{\numberline {3.5}Comparison of expected walk length methods}{22}
-\contentsline {chapter}{\numberline {4}Conclusion}{25}
-\contentsline {section}{\numberline {4.1}Future work}{25}
-\contentsline {chapter}{References}{27}
-\contentsline {chapter}{\numberline {A}Appendix}{29}
-\contentsline {section}{\numberline {A.1}Gamma functions}{29}
-\contentsline {section}{\numberline {A.2}Manhattan Distance}{30}
-\contentsline {section}{\numberline {A.3}Maths}{30}
-\contentsline {subsection}{\numberline {A.3.1}Definitions}{30}
-\contentsline {subsection}{\numberline {A.3.2}Hadamard Gate}{31}
-\contentsline {subsection}{\numberline {A.3.3}Homology Classes}{31}
-\contentsline {section}{\numberline {A.4}Code}{32}
-\contentsline {chapter}{References}{33}
+\contentsline {section}{\numberline {2.4}Improved Decoders}{16}
+\contentsline {subsection}{\numberline {2.4.1}Gaussian Decoder}{17}
+\contentsline {subsection}{\numberline {2.4.2}Manhattan PDF Decoder}{17}
+\contentsline {chapter}{\numberline {3}Results}{19}
+\contentsline {section}{\numberline {3.1}Correlated Errors}{19}
+\contentsline {section}{\numberline {3.2}Improved decoder}{19}
+\contentsline {section}{\numberline {3.3}Correction schemes}{21}
+\contentsline {section}{\numberline {3.4}Performance of Gaussian Correction}{24}
+\contentsline {section}{\numberline {3.5}Comparison of expected walk length methods}{24}
+\contentsline {chapter}{\numberline {4}Conclusion}{27}
+\contentsline {section}{\numberline {4.1}Future work}{27}
+\contentsline {chapter}{References}{29}
+\contentsline {chapter}{\numberline {A}Appendix}{31}
+\contentsline {section}{\numberline {A.1}Gamma functions}{31}
+\contentsline {section}{\numberline {A.2}Manhattan Distance}{32}
+\contentsline {section}{\numberline {A.3}Maths}{32}
+\contentsline {subsection}{\numberline {A.3.1}Definitions}{32}
+\contentsline {subsection}{\numberline {A.3.2}Hadamard Gate}{33}
+\contentsline {subsection}{\numberline {A.3.3}Homology Classes}{33}
+\contentsline {section}{\numberline {A.4}Code}{34}
+\contentsline {chapter}{References}{35}
